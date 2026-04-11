@@ -45,6 +45,18 @@ This toolkit is organized to match the sections of the article.
   A hashing utility to remove near-duplicate samples from raw datasets.
 - **`08_stale_artifact_cleanup.py`**  
   A utility to auto-archive or delete checkpoints older than N days to reduce storage costs.
+
+### 5. Redesigning the Training Foundation (Part 2)
+Architectural changes to slash parameter counts and bypass early-epoch compute.
+* `09_peft_lora_warm_start.py`: Implements LoRA to freeze 99% of weights and demonstrates domain-specific embedding injection.
+
+### 6. Memory Optimization and Execution Speed (Part 2)
+Bypassing hardware limits through software compilation.
+* `10_memory_and_compilation.py`: Enables native gradient checkpointing and PyTorch 2.0 kernel fusion to maximize VRAM and throughput.
+
+### 7. Smarter Learning Dynamics (Part 2)
+Algorithmic efficiencies to reduce necessary training steps.
+* `11_knowledge_distillation_loop.py`: A custom loss function blending KL Divergence and Cross-Entropy to train tiny student models from massive teachers.
 ---
 
 ## 🚀 Quick Start
